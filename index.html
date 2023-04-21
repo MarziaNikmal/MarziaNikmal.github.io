@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Protfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/bf25023762.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--Home-->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#Protfolio">Portfolio</a></li>
+                        <li><a href="#content">Contact</a></li>
+                        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Designer</p>
+                    <h1>Hi, I'm <span>Marzia Nikmal</span><br> from Afghanistan</h1>
+                </div>
+            </div>
+        </div>
+        <!--End of Home-->
+
+        <!--About-->
+        <div id="about">
+            <div class="container1">
+                <div class="row">
+                    <div class="about-col-1">
+                    <img src="img/user3.webp">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                            <p>I am ambitious and driven. 
+                            I thrive on challenge and constantly set goals for myself,
+                            I am always looking for an opportunity 
+                            to do better and achieve greatness.</p>
+                            <div class="tab-title">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-content active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Designer</span><br>Designing Web/App interfaces</li>
+                                    <li><span>Web Development</span><br>Web App Developer</li>
+                                    <li><span>App Development</span><br>Building Andriod/IOS apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="experince">
+                                <ul>
+                                    <li><span>2019-2021</span><br>Website Manager at Ministry of Finance</li>
+                                    <li><span>2017-2019</span><br>Junior Web App Developer</li>
+                                    <li><span>2016-2015</span><br>Junior Developer</li>
+                                </ul>
+                            </div>
+                            <div class="tab-content" id="education">
+                                <ul>
+                                    <li><span>2022</span><br>IBM Data Analyst certified/Microsoft Azure certified</li>
+                                    <li><span>2016</span><br>Bachelor degree in Computer Sience</li>
+                                    <li><span>2012</span><br>Diploma of Database Administration</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of About-->
+
+
+        <!--Services-->
+        <div id="services">
+            <div class="container2">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>A web design service provides you with a customized
+                            website design that's perfect for your business or personal site. </p>
+                            <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-crop"></i>
+                        <h2>Web Developer</h2>
+                        <p>Web developers collaborate with website and graphic designers, 
+                        monitor website traffic, troubleshoot website problems when they arise,
+                        and update websites as necessary. </p>
+                            <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fab fa-app-store"></i>
+                        <h2>Aap Design</h2>
+                        <p>The idea is to make an information structure and 
+                            create an interactive pattern out of it. </p>
+                            <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--End of Services-->
+        
+
+        <!--Protfolio-->
+        <div id="Protfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>The app connects you to the talented people around the world.
+                                Download it from play store.</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/work-2.png">
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>Listen to the update music around the World.</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>Best Online Stores.</p>
+                                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <!--End of Protfolio-->
+        <!--Contact-->
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contaact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                        <p><i class="fa-solid fa-square-phone"></i>1234567890</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="img/cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; Marzia. <i class="fa-solid fa-chalkboard-user"></i> Academy of Learning</p>
+
+            </div>
+        </div>
+        <!--End of Contact-->
+        
+        
+        
+        
+        
+        
+        
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontent = document.getElementsByClassName("tab-content");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontents of tabcontent){
+                    tabcontents.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+       <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+       </script>
+        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyPyK_6Ps954WH3CDWvYUkM40K9k7EndszJkbGsIFeYtCyb7OI6LcidA93-d7UZne5smQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                }
+                )
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
+    </body>
+</html>
